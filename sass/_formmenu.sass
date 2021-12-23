@@ -1,0 +1,133 @@
+    
+.formmenu
+    display: flex
+    margin-top: 64px
+    box-sizing: border-box
+    position: relative
+    &::before
+        content: url(../img/background.jpg)
+        position: absolute
+        top: -64px
+        left: -82px
+
+    &-description
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: flex-start
+        width: 584px
+        box-sizing: border-box
+        position: relative
+                 
+        &_title
+            margin-top: 276px
+            width: 473px
+            font: $font-text
+            line-height: 38px
+            color: $text-color
+        &_credo
+             margin-top: 22px
+             margin-bottom: 216px
+             font: $font-text-subtitle
+             font-size: 18px
+             color: $text-color
+             line-height: 22px
+
+        &_radius
+            position: absolute
+            bottom: -186px
+            left: -92px
+
+    &-form
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        background: $menu-bg
+        width: 556px
+        padding-top: 10px
+        box-sizing: border-box
+        padding-left: 127px
+        &_buttontop
+            border: 0
+            background-color: #ffffff
+            cursor: pointer
+            font: $font-text-subtitle
+            font-size: 16px
+            color: $form-text-color
+            position: relative
+            top: 0
+            right: 428px
+
+        &_brud
+            text-align: start
+            margin-bottom: $gap-md
+            &_placeholder
+                padding: 
+                    top: 22px
+                    bottom: 23px
+                    left: 30px
+                font: $font-text-form
+                margin-top: 14px
+            &_placeholder:first-child
+                color: #494949
+            
+            & span
+                font: $font-text-form
+                font-size: 16px
+                line-height: 19px
+                color: $form-span-color
+            & input
+                width: 426px
+                border: 2px solid $form-text-color
+                box-sizing: border-box
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.11)
+                border-radius: 6px
+            & input:hover
+                border-color:  #8692A6
+            & input:focus
+                border-color: #1565D8
+                outline: none
+            &_ccheck
+                width: 426px
+                margin-bottom: $gap-lg - 1
+                
+                
+            &_check
+                margin-right: $gap-sm
+                
+                &_title
+                    line-height: 19px
+                    font: $font-text-subtitle
+                    font-size: 16px
+                    color: $form-span-color
+        &_buttonbottom
+            padding:
+               top: 22px
+               bottom: 23px
+               left: 147px
+               right: 147px
+            box-sizing: border-box
+            color: $text-color
+            font: $font-text-subtitle
+            font-size: 16px
+            line-height: 19px
+            background: #1565D8
+            border-radius: 6px
+            cursor: pointer
+            white-space: nowrap
+            border: 0
+               
+        &_header
+            font: $font-heder
+            margin-top: $gap-lg * 2 + $gap-sm
+            line-height: $gap-lg - 4
+            color: $heder-color
+            width: 429px
+        &_title
+            font: $font-text
+            font-size: 18px
+            color: $form-text-color
+            line-height: 28px
+            margin-top: $gap-sm
+            margin-bottom: $gap-lg
+      
